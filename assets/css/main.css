@@ -858,9 +858,9 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Services Section
+# Skillset Section
 --------------------------------------------------------------*/
-.services .service-item {
+.skillset .service-item {
   background-color: var(--surface-color);
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
   padding: 60px 30px;
@@ -870,7 +870,7 @@ section,
   height: 100%;
 }
 
-.services .service-item .icon {
+.skillset .service-item .icon {
   color: var(--contrast-color);
   margin: 0;
   width: 64px;
@@ -884,26 +884,26 @@ section,
   transition: ease-in-out 0.3s;
 }
 
-.services .service-item h3 {
+.skillset .service-item h3 {
   font-weight: 700;
   margin: 10px 0 15px 0;
   font-size: 22px;
   transition: ease-in-out 0.3s;
 }
 
-.services .service-item p {
+.skillset .service-item p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
 @media (min-width: 1365px) {
-  .services .service-item:hover {
+  .skillset .service-item:hover {
     transform: translateY(-10px);
     border-color: var(--accent-color);
   }
 
-  .services .service-item:hover h3 {
+  .skillset .service-item:hover h3 {
     color: var(--accent-color);
   }
 }
@@ -1563,14 +1563,14 @@ section,
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
-.service-details .services-list {
+.service-details .skillset-list {
   background-color: var(--surface-color);
   padding: 10px 30px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   margin-bottom: 20px;
 }
 
-.service-details .services-list a {
+.service-details .skillset-list a {
   display: block;
   line-height: 1;
   padding: 8px 0 8px 15px;
@@ -1580,17 +1580,17 @@ section,
   transition: 0.3s;
 }
 
-.service-details .services-list a.active {
+.service-details .skillset-list a.active {
   color: var(--heading-color);
   font-weight: 700;
   border-color: var(--accent-color);
 }
 
-.service-details .services-list a:hover {
+.service-details .skillset-list a:hover {
   border-color: var(--accent-color);
 }
 
-.service-details .services-img {
+.service-details .skillset-img {
   margin-bottom: 20px;
 }
 
