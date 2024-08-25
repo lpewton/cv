@@ -1064,22 +1064,22 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Pricing Section
+# Media Section
 --------------------------------------------------------------*/
-.pricing .pricing-item {
+.media .media-item {
   border-bottom: 1px dashed color-mix(in srgb, var(--default-color), transparent 60%);
   width: 100%;
   height: 100%;
   padding: 0 0 15px 0;
 }
 
-.pricing .pricing-item h3 {
+.media .media-item h3 {
   margin: 0;
   font-size: 20px;
   font-weight: 600;
 }
 
-.pricing .pricing-item h4 {
+.media .media-item h4 {
   margin: 0;
   font-size: 18px;
   color: var(--accent-color);
