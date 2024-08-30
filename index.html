@@ -263,9 +263,7 @@
               <div class="icon">
                 <img src="./assets/img/technologies/sql.png" class="w-100">
               </div>
-              <a href="#" class="stretched-link">
                 <h3>SQL</h3>
-              </a>
               <p>Practiced in the Code Institute and IT CareerSwitch courses</p>
             </div>
           </div><!-- End Service Item -->
@@ -275,9 +273,7 @@
               <div class="icon">
                 <img src="./assets/img/technologies/django.png" class="w-50">
               </div>
-              <a href="#" class="stretched-link">
                 <h3>Django</h3>
-              </a>
               <p>Practiced in the Code Institute course</p>
             </div>
           </div><!-- End Service Item -->
@@ -287,9 +283,7 @@
               <div class="icon">
                 <img src="./assets/img/technologies/bootstrap.png" class="w-100">
               </div>
-              <a href="#" class="stretched-link">
                 <h3>Bootstrap</h3>
-              </a>
               <p>Practiced in the Code Institute and IT CareerSwitch courses</p>
             </div>
           </div><!-- End Service Item -->
@@ -299,11 +293,8 @@
               <div class="icon">
                 <img src="./assets/img/technologies/git.png" class="w-100">
               </div>
-              <a href="#" class="stretched-link">
                 <h3>Git</h3>
-              </a>
               <p>Practiced in the Code Institute and IT CareerSwitch courses</p>
-              <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -312,11 +303,8 @@
               <div class="icon">
                 <img src="./assets/img/technologies/github.png" class="w-100">
               </div>
-              <a href="#" class="stretched-link">
                 <h3>GitHub</h3>
-              </a>
               <p>Practiced in the Code Institute and IT CareerSwitch courses</p>
-              <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -325,11 +313,8 @@
               <div class="icon">
                 <img src="./assets/img/technologies/heroku.png" class="w-50">
               </div>
-              <a href="#" class="stretched-link">
                 <h3>Heroku</h3>
-              </a>
               <p>Practiced in the Code Institute course</p>
-              <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -1074,28 +1059,28 @@
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+        <form id="contact-form" action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
           <div class="row gy-4">
 
             <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+              <input id="form-name" type="text" name="name" class="form-control" placeholder="Your Name" required="">
             </div>
 
             <div class="col-md-6 ">
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+              <input id="form-email" type="email" class="form-control" name="email" placeholder="Your Email" required="">
             </div>
 
             <div class="col-md-12">
-              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+              <input id="form-subject" type="text" class="form-control" name="subject" placeholder="Subject" required="">
             </div>
 
             <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+              <textarea id="form-message" class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
             </div>
 
             <div class="col-md-12 text-center">
               <div class="loading">Loading</div>
-              <div class="error-message"></div>
+              <div class="error-message">Your message could not be sent. Please try again later</div>
               <div class="sent-message">Your message has been sent. Thank you!</div>
 
               <button type="submit">Send Message</button>
@@ -1136,7 +1121,6 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
@@ -1145,6 +1129,10 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- JQuery -->
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
