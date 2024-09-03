@@ -261,6 +261,8 @@ contactForm.addEventListener('submit', function (event) {
   var sentMessage = document.getElementsByClassName('sent-message')[0];
   var errorMessage = document.getElementsByClassName('error-message')[0];
   var loading = document.getElementsByClassName('loading')[0];
+  var submitBtn = document.getElementById('submit-btn');
+  submitBtn.disabled = true;
 
   loading.classList.add('d-block');
   errorMessage.classList.remove('d-block');
@@ -281,12 +283,13 @@ contactForm.addEventListener('submit', function (event) {
       sentMessage.classList.add('d-block');
       loading.classList.remove('d-block');
       errorMessage.classList.remove('d-block');
+      submitBtn.disabled = false;
     },
     error: function (jqXHR, textStatus, errorThrown) {
       errorMessage.classList.add('d-block');
       loading.classList.remove('d-block');
       sentMessage.classList.remove('d-block');
-
+      submitBtn.disabled = false;
     }
   })
 });
