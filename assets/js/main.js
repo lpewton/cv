@@ -284,6 +284,11 @@ contactForm.addEventListener('submit', function (event) {
       loading.classList.remove('d-block');
       errorMessage.classList.remove('d-block');
       submitBtn.disabled = false;
+      document.getElementById('form-name').value = '';
+      document.getElementById('form-email').value = '';
+      document.getElementById('form-subject').value = '';
+      document.getElementById('form-message').value = '';
+
     },
     error: function (jqXHR, textStatus, errorThrown) {
       errorMessage.classList.add('d-block');
