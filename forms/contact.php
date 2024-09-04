@@ -29,7 +29,7 @@ try {
     
     //Content
     $mail->Subject = $_REQUEST['subject'];
-    $mail->Body    = $_REQUEST['message'];
+    $mail->Body    = $_REQUEST['message'] . "\n\n" . $_REQUEST['name'];
 
     $mail->send();
     echo 'Message has been sent';
